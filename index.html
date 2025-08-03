@@ -1,124 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakarshan Khadka | Junior Python Developer</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-</head>
-<body>
-    <div class="custom-cursor"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aakarshan Portfolio Website</title>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--=============== ICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Aakarshan</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link"><span>Home</span></a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link"><span>About</span></a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link"><span>Projects</span></a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link"><span>Contact</span></a></li>
-                </ul>
-            </div>
-            <i class="uil uil-moon theme-toggle" id="theme-button"></i>
-        </nav>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">AK</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"
+                ><span>Home</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"><span>About</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link"><span>Projects</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        <i class="uil uil-moon theme-toggle" id="theme-button"></i>
+      </nav>
     </header>
 
+    <!--=============== MAIN ===============-->
     <main class="main">
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data" data-scroll>
-                    <span class="home__greeting">Hello, I'm</span>
-                    <h1 class="home__title">Aakarshan Khadka</h1>
-                    <h3 class="home__subtitle">Junior Python Developer</h3>
-                    <p class="home__description">Driven by a passion for technology and continuous learning, I thrive in dynamic environments where innovation and creativity are key.</p>
-                    <a href="#contact" class="button">Contact Me</a>
-                </div>
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data" data-scroll>
+            <span class="home__greeting">Hello, I'm</span>
+            <h1 class="home__title">Aakarshan Khadka</h1>
+            <h3 class="home__subtitle">
+              Creative Developer Building Solutions
+            </h3>
+            <p class="home__description">
+              A Developer from Nepal with a passion for creating efficient,
+              scalable, and innovative solutions to real world problems.
+            </p>
+            <div class="home__buttons">
+              <a
+                href="mailto:akarshankhadka5@gmail.com"
+                class="button button--flex"
+              >
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+              <a
+                href="assets/pdf/Aakarshan_Khadka_CV.pdf"
+                download
+                class="button button--ghost button--flex"
+              >
+                Download CV <i class="uil uil-download-alt button__icon"></i>
+              </a>
             </div>
-        </section>
+            <div class="home__socials" style="margin-top: 1.5rem">
+              <a
+                href="https://www.linkedin.com/in/aakarshan-khadka/"
+                target="_blank"
+                class="footer__social-link"
+                aria-label="LinkedIn"
+                ><i class="uil uil-linkedin-alt"></i
+              ></a>
+              <a
+                href="https://github.com/Aakarshann"
+                target="_blank"
+                class="footer__social-link"
+                aria-label="GitHub"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/aakarshan_khadka/"
+                target="_blank"
+                class="footer__social-link"
+                aria-label="Instagram"
+                ><i class="uil uil-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="about section" id="about">
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid" data-scroll>
+          <img
+            src="/assets/img/profile.png"
+            alt="Aakarshan Khadka"
+            class="about__img"
+          />
+
+          <div class="about__data">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
-            
-            <div class="about__container container grid" data-scroll>
-                <img src="assets/img/profile.png" alt="Aakarshan Khadka" class="about__img">
-                
-                <div class="about__data">
-                    <p class="about__description">
-                        I am eager to contribute my growing experience in machine learning, data science, and both front-end and back-end development to a team that values collaboration and growth. I aim to leverage my diverse skill sets and enthusiasm to develop impactful solutions.
-                    </p>
-                    <button class="button button--flex" id="generate-bio-btn">
-                        ✨ Generate Bio with AI
-                    </button>
+            <p class="about__description" style="text-align: justify">
+              Beyond building applications, I am driven by a passion for
+              leveraging technology to create meaningful change in the world. I
+              believe that well-crafted code can be a powerful tool to solve
+              complex challenges and improve lives. My focus is on contributing
+              my growing experience in machine learning and data-driven
+              development to a team that values not just innovation, but also
+              social responsibility. I am eager to help build impactful
+              solutions that leave a lasting, positive footprint.
+            </p>
+          </div>
+        </div>
+
+        <div class="qualification__container container" data-scroll>
+          <h3 class="about__section-title">My Personal Journey</h3>
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#experience"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i
+              >Experience
+            </div>
+            <div
+              class="qualification__button button--flex"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i
+              >Education
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <div
+              class="qualification__content qualification__content-active"
+              data-content
+              id="experience"
+            >
+              <!-- Press1 -->
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div>
+                    <h3 class="qualification__title">
+                      Backend Developer & DevOps Engineer
+                    </h3>
+                    <span class="qualification__subtitle">Press1</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> Jul 2025 - Present
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div></div>
+                  <i class="uil uil-angle-down qualification__arrow"></i>
                 </div>
-            </div>
-            
-            <div class="skills__container container grid" data-scroll>
-                <h3 class="about__section-title">My Technical Level</h3>
-                <div class="skills__content"><div class="skills__header"><i class="uil uil-brackets-curly skills__icon"></i><div><h1 class="skills__title">Languages & Frameworks</h1><span class="skills__subtitle">Core technologies I use</span></div><i class="uil uil-angle-down skills__arrow"></i></div><div class="skills__list grid"><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">Python & FastAPI/Django</h3><span class="skills__number">90%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="90%"></span></div></div><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">HTML, CSS, SQL</h3><span class="skills__number">85%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="85%"></span></div></div><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">Dart & Flutter</h3><span class="skills__number">70%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="70%"></span></div></div><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">Pandas, Matplotlib, Scikit-learn</h3><span class="skills__number">75%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="75%"></span></div></div></div></div>
-                <div class="skills__content"><div class="skills__header"><i class="uil uil-server-network skills__icon"></i><div><h1 class="skills__title">Cloud & DevOps</h1><span class="skills__subtitle">Infrastructure and tools</span></div><i class="uil uil-angle-down skills__arrow"></i></div><div class="skills__list grid"><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">AWS (S3, Lambda, EC2)</h3><span class="skills__number">80%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="80%"></span></div></div><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">Microsoft Azure</h3><span class="skills__number">65%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="65%"></span></div></div><div class="skills__data"><div class="skills__titles"><h3 class="skills__name">NGINX & Linux VM</h3><span class="skills__number">70%</span></div><div class="skills__bar"><span class="skills__percentage" data-width="70%"></span></div></div></div></div>
-            </div>
-
-            <div class="qualification__container container" data-scroll>
-                <h3 class="about__section-title">My Personal Journey</h3>
-                <div class="qualification__tabs"><div class="qualification__button button--flex qualification__active" data-target="#education"><i class="uil uil-graduation-cap qualification__icon"></i>Education</div><div class="qualification__button button--flex" data-target="#experience"><i class="uil uil-briefcase-alt qualification__icon"></i>Experience</div></div>
-                <div class="qualification__sections">
-                    <div class="qualification__content qualification__content-active" data-content id="education"><div class="qualification__data"><div><h3 class="qualification__title">BSc (Hons) Computing with AI</h3><span class="qualification__subtitle">Islington College, London Met Uni</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2023 - Present</div></div><div><span class="qualification__rounder"></span><span class="qualification__line"></span></div></div><div class="qualification__data"><div></div><div><span class="qualification__rounder"></span><span class="qualification__line"></span></div><div><h3 class="qualification__title">A Levels</h3><span class="qualification__subtitle">Malpi Institute</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2020 - 2022</div></div></div><div class="qualification__data"><div><h3 class="qualification__title">SEE</h3><span class="qualification__subtitle">The Chandbagh School</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Completed 2020</div></div><div><span class="qualification__rounder"></span></div></div></div>
-                    <div class="qualification__content" data-content id="experience"><div class="qualification__data"><div><h3 class="qualification__title">Content Writer Intern</h3><span class="qualification__subtitle">Star Office International</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Mar 2024 - Jun 2024</div></div><div><span class="qualification__rounder"></span><span class="qualification__line"></span></div></div><div class="qualification__data"><div></div><div><span class="qualification__rounder"></span><span class="qualification__line"></span></div><div><h3 class="qualification__title">Junior Python Developer</h3><span class="qualification__subtitle">AZMinds</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Dec 2023 - Present</div></div></div><div class="qualification__data"><div><h3 class="qualification__title">Database Intern</h3><span class="qualification__subtitle">Mediisha</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Sep 2023 - Dec 2023</div></div><div><span class="qualification__rounder"></span><span class="qualification__line"></span></div></div><div class="qualification__data"><div></div><div><span class="qualification__rounder"></span></div><div><h3 class="qualification__title">Backend Intern</h3><span class="qualification__subtitle">AZMinds</span><div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Sep 2023 - Dec 2023</div></div></div></div>
+                <div class="qualification__details">
+                  <ul class="qualification__details-list">
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Built and maintained backend systems for web-based
+                      projects.
+                    </li>
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Containerized applications using Docker for consistent
+                      deployment.
+                    </li>
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Managed deployment pipelines and server infrastructure.
+                    </li>
+                  </ul>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <section class="projects section" id="projects">
-            <h2 class="section__title">My Projects</h2>
-            <span class="section__subtitle">Most Recent Work</span>
-            <div class="projects__filters" data-scroll>
-                <span class="projects__filter-item active-filter" data-filter="all">All</span>
-                <span class="projects__filter-item" data-filter=".professional">Professional</span>
-                <span class="projects__filter-item" data-filter=".personal">Personal</span>
-            </div>
-            <div class="projects__container container grid" data-scroll>
-                <div class="project__card mix professional"><img src="assets/img/and.png" alt="Agent Next Door" class="project__img"><div class="project__data"><h3 class="project__title">Agent Next Door</h3><p class="project__description">A Singaporean Property Listing Site to find your dream property.</p><a href="#" class="project__link">View Details <i class="uil uil-arrow-right"></i></a></div></div>
-                <div class="project__card mix professional"><img src="assets/img/press1.png" alt="Press1.dev Project" class="project__img"><div class="project__data"><h3 class="project__title">Press1.dev</h3><p class="project__description">A platform for developers to showcase their projects and skills.</p><a href="#" class="project__link">View Details <i class="uil uil-arrow-right"></i></a></div></div>
-                <div class="project__card mix personal"><img src="assets/img/project-daal-bhaat-gym.jpg" alt="Daal Bhaat Gym" class="project__img"><div class="project__data"><h3 class="project__title">Daal Bhaat Gym</h3><p class="project__description">A dynamic web app for gym members and admins to track memberships.</p><a href="#" class="project__link">View Details <i class="uil uil-arrow-right"></i></a></div></div>
-                <div class="project__card mix personal"><img src="assets/img/project-salary-analysis.jpg" alt="Salary Analysis" class="project__img"><div class="project__data"><h3 class="project__title">Salary Analysis</h3><p class="project__description">Analysis of data science expert salaries using Python libraries.</p><a href="#" class="project__link">View Details <i class="uil uil-arrow-right"></i></a></div></div>
-                <div class="project__card mix personal"><img src="assets/img/project-product-management.jpg" alt="Product Management System" class="project__img"><div class="project__data"><h3 class="project__title">Product Management System</h3><p class="project__description">A Python system to track and update product stock transactions.</p><a href="#" class="project__link">View Details <i class="uil uil-arrow-right"></i></a></div></div>
-            </div>
-        </section>
+              <!-- Junior Python Developer -->
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Junior Python Developer
+                    </h3>
+                    <span class="qualification__subtitle">AZMinds</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> Dec 2024 - Present
+                    </div>
+                  </div>
+                  <i class="uil uil-angle-down qualification__arrow"></i>
+                </div>
+                <div class="qualification__details">
+                  <ul class="qualification__details-list">
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Designed, developed, and deployed RESTful APIs.
+                    </li>
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Managed and optimized databases, ensuring reliability and
+                      performance.
+                    </li>
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Implemented rigorous testing to maintain API security and
+                      functionality.
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
-            <div class="contact__container container grid" data-scroll>
-                 <div class="contact__content"><div class="contact__info"><div class="contact__card"><i class="uil uil-envelope-alt contact__card-icon"></i><h3 class="contact__card-title">Email</h3><span class="contact__card-data">akarshankhadka5@gmail.com</span></div><div class="contact__card"><i class="uil uil-phone-alt contact__card-icon"></i><h3 class="contact__card-title">Phone</h3><span class="contact__card-data">+977-9860767901</span></div><div class="contact__card"><i class="uil uil-map-marker contact__card-icon"></i><h3 class="contact__card-title">Location</h3><span class="contact__card-data">Kathmandu, Nepal</span></div></div></div>
-                <form action="" class="contact__form" id="contact-form">
-                    <div class="contact__content"><div class="contact__form-div"><label for="name" class="contact__form-tag">Name</label><input type="text" name="user_name" required placeholder="Enter your name" class="contact__form-input" id="contact-name"></div><div class="contact__form-div"><label for="email" class="contact__form-tag">Mail</label><input type="email" name="user_email" required placeholder="Enter your email" class="contact__form-input" id="contact-email"></div><div class="contact__form-div contact__form-area"><label for="message" class="contact__form-tag">Message</label><textarea name="user_project" required placeholder="Write your message" id="contact-project" class="contact__form-input"></textarea></div><p class="contact__message" id="contact-message"></p><button type="submit" class="button">Submit <i class="uil uil-arrow-right"></i></button></div>
-                </form>
+              <!-- Backend Intern -->
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div>
+                    <h3 class="qualification__title">Backend Intern</h3>
+                    <span class="qualification__subtitle">AZMinds</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> Sep 2024 - Dec 2024
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div></div>
+                  <i class="uil uil-angle-down qualification__arrow"></i>
+                </div>
+                <div class="qualification__details">
+                  <ul class="qualification__details-list">
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Gained knowledge on Docker, Amazon AWS, and virtual
+                      environments.
+                    </li>
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Worked with real-time data, ensuring optimization and
+                      fast data processing.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Content Writer -->
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">Content Writer Intern</h3>
+                    <span class="qualification__subtitle"
+                      >Star Office International</span
+                    >
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> Mar 2024 - Jun 2024
+                    </div>
+                  </div>
+                  <i class="uil uil-angle-down qualification__arrow"></i>
+                </div>
+                <div class="qualification__details">
+                  <ul class="qualification__details-list">
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Conducted research and crafted engaging content on
+                      various topics.
+                    </li>
+                    <li class="qualification__details-item">
+                      <i
+                        class="uil uil-check-circle qualification__details-icon"
+                      ></i
+                      >Leveraged SEO tools and strategies to optimize content.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="qualification__content" data-content id="education">
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div>
+                    <h3 class="qualification__title">
+                      BSc (Hons) Computing with AI
+                    </h3>
+                    <span class="qualification__subtitle"
+                      >Islington College, London Met Uni</span
+                    >
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> 2023 - 2025
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">A Levels</h3>
+                    <span class="qualification__subtitle">Malpi Institute</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> 2020 - 2022
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qualification__data">
+                <div class="qualification__header">
+                  <div>
+                    <h3 class="qualification__title">SEE</h3>
+                    <span class="qualification__subtitle"
+                      >The Chandbagh School</span
+                    >
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i> Completed 2020
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__container container grid" data-scroll>
+          <h3 class="about__section-title">My Technical Level</h3>
+          <div class="skills__content">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Languages & Frameworks</h1>
+                <span class="skills__subtitle">Core technologies I use</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python & FastAPI/Django</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="90%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML, CSS</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="85%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Dart & Flutter</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="70%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Pandas, Matplotlib, Scikit-learn</h3>
+                  <span class="skills__number">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="75%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__content">
+            <div class="skills__header">
+              <i class="uil uil-database skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Databases & Tools</h1>
+                <span class="skills__subtitle"
+                  >Managing data and containers</span
+                >
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">SQL & Database Design</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="85%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Docker</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="80%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__content">
+            <div class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Cloud & DevOps</h1>
+                <span class="skills__subtitle">Infrastructure and tools</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">AWS (S3, Lambda, EC2, SES)</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="85%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Serverless Framework</h3>
+                  <span class="skills__number">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="75%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NGINX & Linux VM</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage" data-width="70%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== PROJECTS ===============-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">My Projects</h2>
+        <span class="section__subtitle">Most Recent Work</span>
+        <div class="projects__filters" data-scroll>
+          <span class="projects__filter-item active-filter" data-filter="all"
+            >All</span
+          >
+          <span class="projects__filter-item" data-filter=".professional"
+            >Professional</span
+          >
+          <span class="projects__filter-item" data-filter=".personal"
+            >Personal</span
+          >
+        </div>
+        <div class="projects__container container grid" data-scroll>
+          <div class="project__card mix personal">
+            <img
+              src="https://placehold.co/280x180/CCCCCC/333?text=Rescue+Sathi"
+              alt="Rescue Sathi"
+              class="project__img"
+            />
+            <div class="project__data">
+              <h3 class="project__title">RescueSathi</h3>
+              <p class="project__description">
+                AI-powered dog rescue platform using YOLOv5 and ResNet50 to
+                detect and assess injuries from user-submitted images.
+              </p>
+              <a href="#" class="project__link"
+                >View Details <i class="uil uil-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__card mix professional">
+            <img
+              src="assets/img/and.png"
+              alt="Agent Next Door"
+              class="project__img"
+            />
+            <div class="project__data">
+              <h3 class="project__title">Agent Next Door</h3>
+              <p class="project__description">
+                A Singaporean Property Listing Site to find your dream property.
+              </p>
+              <a href="https://www.agentnextdoor.co/" class="project__link"
+                >View Details <i class="uil uil-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__card mix professional">
+            <img
+              src="assets/img/press1.png"
+              alt="Press1.dev Project"
+              class="project__img"
+            />
+            <div class="project__data">
+              <h3 class="project__title">Press1.dev</h3>
+              <p class="project__description">
+                A platform for developers to showcase their projects and skills.
+              </p>
+              <a href="https://press1.dev/" class="project__link"
+                >View Details <i class="uil uil-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__card mix personal">
+            <img
+              src="https://placehold.co/280x180/CCCCCC/333?text=Daal+Bhaat+Gym"
+              alt="Daal Bhaat Gym"
+              class="project__img"
+            />
+            <div class="project__data">
+              <h3 class="project__title">Daal Bhaat Gym</h3>
+              <p class="project__description">
+                A dynamic web app for gym members and admins to track
+                memberships.
+              </p>
+              <a href="#" class="project__link"
+                >View Details <i class="uil uil-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__card mix personal">
+            <img
+              src="https://placehold.co/280x180/CCCCCC/333?text=Salary+Analysis"
+              alt="Salary Analysis"
+              class="project__img"
+            />
+            <div class="project__data">
+              <h3 class="project__title">Salary Analysis</h3>
+              <p class="project__description">
+                Analysis of data science expert salaries using Python libraries.
+              </p>
+              <a href="#" class="project__link"
+                >View Details <i class="uil uil-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__card mix personal">
+            <img
+              src="https://placehold.co/280x180/CCCCCC/333?text=Product+Management"
+              alt="Product Management System"
+              class="project__img"
+            />
+            <div class="project__data">
+              <h3 class="project__title">Product Management System</h3>
+              <p class="project__description">
+                A Python system to track and update product stock transactions.
+              </p>
+              <a href="#" class="project__link"
+                >View Details <i class="uil uil-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+        <div class="contact__container container grid" data-scroll>
+          <div class="contact__content">
+            <div class="contact__info">
+              <a
+                href="mailto:akarshankhadka5@gmail.com"
+                class="contact__card"
+                style="display: block; text-decoration: none"
+              >
+                <i class="uil uil-envelope-alt contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data"
+                  >akarshankhadka5@gmail.com</span
+                >
+              </a>
+              <div class="contact__card">
+                <i class="uil uil-map-marker contact__card-icon"></i>
+                <h3 class="contact__card-title">Location</h3>
+                <span class="contact__card-data">Kathmandu, Nepal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!--=============== FOOTER ===============-->
     <footer class="footer">
-        <div class="footer__container container"><h1 class="footer__title">Aakarshan</h1><ul class="footer__list"><li><a href="#about" class="footer__link">About</a></li><li><a href="#projects" class="footer__link">Projects</a></li></ul><div class="footer__socials"><a href="https://www.linkedin.com/in/aakarshan-khadka/" target="_blank" class="footer__social-link"><i class="uil uil-linkedin-alt"></i></a><a href="https://github.com/Aakarshann" target="_blank" class="footer__social-link"><i class="uil uil-github-alt"></i></a></div><span class="footer__copy">&#169; Aakarshan Khadka. All rights reserved</span></div>
+      <div class="footer__container container">
+        <h1 class="footer__title">AK</h1>
+        <ul class="footer__list">
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+        </ul>
+        <div class="footer__socials">
+          <a
+            href="https://www.linkedin.com/in/aakarshan-khadka/"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+          <a
+            href="https://github.com/Aakarshann"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/aakarshan_khadka/"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="uil uil-instagram"></i
+          ></a>
+        </div>
+        <span class="footer__copy"
+          >&#169; Aakarshan Khadka. All rights reserved</span
+        >
+      </div>
     </footer>
 
-    <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"
+      ><i class="uil uil-arrow-up scrollup__icon"></i
+    ></a>
 
-    <!--=============== BIO MODAL ===============-->
-    <div class="modal" id="bio-modal">
-        <div class="modal__content">
-            <h4 class="modal__title">Generated Bio</h4>
-            <i class="uil uil-times modal__close"></i>
-            <div class="loader"></div>
-            <p class="modal__body" id="bio-output"></p>
-            <div class="modal__buttons">
-                <button class="button button--small" id="copy-bio-btn">Copy</button>
-            </div>
-        </div>
-    </div>
-
+    <!--=============== SCROLL REVEAL ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>

@@ -85,25 +85,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /*=============== EXPERIENCE ACCORDION ===============*/
-  const experienceHeaders = document.querySelectorAll(".qualification__header");
-  function toggleExperience() {
+  /*=============== QUALIFICATION ACCORDION ===============*/
+  const qualificationHeaders = document.querySelectorAll(".qualification__header");
+  function toggleQualification() {
     const item = this.parentElement;
+    const section = this.closest("[data-content]");
     if (!item.classList.contains("qualification-open")) {
-      // Close all other items before opening the new one
-      experienceHeaders.forEach((el) => {
-        if (el.closest("#experience") && el.parentElement !== item) {
+      qualificationHeaders.forEach((el) => {
+        if (el.closest("[data-content]") === section && el.parentElement !== item) {
           el.parentElement.classList.remove("qualification-open");
         }
       });
     }
-    // Toggle the clicked item
     item.classList.toggle("qualification-open");
   }
-  experienceHeaders.forEach((el) => {
-    // Only add the event listener to headers within the 'experience' tab
-    if (el.closest("#experience")) {
-      el.addEventListener("click", toggleExperience);
+  qualificationHeaders.forEach((el) => {
+    if (el.closest("[data-content]")) {
+      el.addEventListener("click", toggleQualification);
     }
   });
 
